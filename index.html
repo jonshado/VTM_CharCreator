@@ -73,25 +73,25 @@
   <script type="text/javascript" src="./upload/uploadDirective.js"></script>
   <!--/dependencies-->
   <!--Firebase stuff-->
-  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angularFire/2.3.0/angularfire.js"></script>
-  <script>
-    var config = {
-      apiKey: "AIzaSyDjNrDYn_77BLHfDFu3dth62GQTsi5vdZw",
-      authDomain: "vtmsite-64232.firebaseapp.com",
-      databaseURL: "https://vtmsite-64232.firebaseio.com",
-      projectId: "vtmsite-64232",
-      storageBucket: "vtmsite-64232.appspot.com",
-      messagingSenderId: "181998793987"
-    };
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
 
-    firebase.initializeApp(config);
-    angular.element(function(){
-      setTimeout(function(){
-        angular.bootstrap(document, ['site']);
-      }, 400);
-    });
-  </script>
+	<script>
+	// Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAtTNk_9xKoiCyuPdeY_PIPvQS6n0bPHdc",
+    authDomain: "vtm-charcreator.firebaseapp.com",
+    databaseURL: "https://vtm-charcreator.firebaseio.com",
+    projectId: "vtm-charcreator",
+    storageBucket: "vtm-charcreator.appspot.com",
+    messagingSenderId: "744213654749",
+    appId: "1:744213654749:web:fb8a11498e4fb25ec53f34"
+  };
+	// Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
   <!--/Firebase stuff-->
 
   <!--Cookie Policy stuff-->
